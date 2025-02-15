@@ -1,0 +1,73 @@
+services:
+  postgres:
+    image: postgres:latest
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: "unless-stopped"
+    networks:
+      - jarvis-plugin-network
+    env_file:
+      - ./.env.postgres
+
+  nginx:
+    image: jonasal/nginx-certbot:latest
+    restart: unless-stopped
+    env_file:
+      - ./.env.nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./data/nginx:/etc/nginx/templates
+      - nginx_secrets:/etc/letsencrypt 
+    depends_on:
+      - jarvis-helpdesk-plugins-api
+      - jarvis-helpdesk-admin
+      - jarvis-helpdesk-ai-module
+    networks:
+      - jarvis-plugin-network
+
+  jarvis-helpdesk-admin:
+    build:
+      context: ../jarvis-helpdesk-plugins
+      dockerfile: ./apps/admin/Dockerfile
+    restart: "unless-stopped"
+    networks:
+      - jarvis-plugin-network
+    ports:
+      - "8888:8888"
+
+  jarvis-helpdesk-plugins-api:
+    build:
+      context: ../jarvis-helpdesk-plugins-api
+      dockerfile: Dockerfile
+    restart: "unless-stopped"
+    networks:
+      - jarvis-plugin-network
+    env_file:
+      - ./.env.plugin-api
+    depends_on:
+      - postgres
+    expose:
+      - 5555
+
+  jarvis-helpdesk-ai-module:
+    build:
+      context: ../jarvis-helpdesk-ai-module
+      dockerfile: Dockerfile
+    restart: "unless-stopped"
+    networks:
+      - jarvis-plugin-network
+    env_file: ./.env.ai-module
+    expose:
+      - 5502
+
+volumes:
+  postgres-data:
+  nginx_secrets:
+
+networks:
+  jarvis-plugin-network:
+    driver: bridge

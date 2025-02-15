@@ -1,0 +1,50 @@
+{
+  "name": "@jarvis-helpdesk-plugins/pancake",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint . --fix && tsc",
+    "preview": "vite preview",
+    "check-types": "tsc --noEmit --pretty",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@crxjs/vite-plugin": "^1.0.14",
+    "@jarvis-helpdesk-plugins/shared": "*",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-switch": "^1.1.1",
+    "@tanstack/react-query": "^5.37.1",
+    "@types/node": "^20.12.12",
+    "classnames": "^2.5.1",
+    "immer": "^10.1.1",
+    "lodash": "^4.17.21",
+    "react": "^18.3.1",
+    "react-bootstrap-icons": "^1.11.4",
+    "react-dom": "^18.3.1",
+    "use-undo": "^1.1.1",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@jarvis-helpdesk-plugins/eslint-config": "*",
+    "@jarvis-helpdesk-plugins/typescript-config": "*",
+    "@types/chrome": "^0.0.299",
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.9.0",
+    "postcss": "^8.4.47",
+    "sass": "^1.80.1",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.2.2",
+    "vite": "^5.4.8",
+    "vite-plugin-svgr": "^4.2.0",
+    "vite-tsconfig-paths": "^4.2.1"
+  }
+}

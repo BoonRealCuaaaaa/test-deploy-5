@@ -1,0 +1,56 @@
+{
+    "manifest_version": 3,
+    "name": "Jarvis Helpdesk AI Copilot",
+    "author": "Jarvis AI (hello@jarvis.cx, https://jarvis.cx)",
+    "version": "1.0",
+    "icons": {
+        "16": "assets/images/logo-16.png",
+        "48": "assets/images/logo-48.png",
+        "128": "assets/images/logo-128.png"
+    },
+    "side_panel": {
+        "default_path": "/sidepanel.html"
+    },
+    "action": {
+        "default_popup": "/index.html",
+        "default_title": "AI Plugin"
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab",
+        "scripting",
+        "sidePanel"
+    ],
+    "host_permissions": [
+        "https://pancake.vn/*"
+    ],
+    "web_accessible_resources": [
+        {
+            "matches": [
+                "https://pancake.vn/*"
+            ],
+            "resources": [
+                "*"
+            ]
+        }
+    ],
+    "externally_connectable": {
+        "matches": [
+            "<all_urls>"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://pancake.vn/*"
+            ],
+            "js": [
+                "src/content/index.ts"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "src/background/index.ts"
+    }
+}

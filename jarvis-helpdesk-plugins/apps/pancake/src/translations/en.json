@@ -1,0 +1,94 @@
+{
+  "app": {
+    "name": "Jarvis Helpdesk AI Copilot",
+    "short_description": "Jarvis is an AI copilot for Zendesk Helpdesk",
+    "long_description": "Jarvis is an AI copilot for Zendesk Helpdesk",
+    "installation_instructions": "Configure the following app settings, then click Install:...",
+    "title": "Jarvis Helpdesk AI Copilot"
+  },
+  "ticket_sidebar": {
+    "hello": "Hello from Ticket Sidebar",
+    "onboarding": {
+      "welcome": "Welcome to Jarvis Helpdesk",
+      "introduction": "Jarvis Helpdesk enhances your support operations with AI-driven features:",
+      "login_required": "Jarvis Helpdesk is installed, but logging in to Admin Workspace is required.",
+      "domain_required": "To start using Jarvis Helpdesk in Zendesk, please set up the integration with your Zendesk domain.",
+      "google_login_warning": "If you're still seeing this screen after login, please click \"Go to Admin Workspace\" again.",
+      "go_to_admin": "Go to Admin Workspace"
+    },
+    "autoResponse": {
+      "label": "Auto Response",
+      "tooltip": "Automatically draft a response when entering this site or receiving a new message from client."
+    },
+    "overview": {
+      "label": "Overview",
+      "totalMessages": "Total Messages",
+      "lastMessageByAgent": "Last Message by Agent",
+      "averageResponseTime": "Average Response Time"
+    },
+    "sentiments": {
+      "label": "Sentiments",
+      "customerTone": "Customer Tone",
+      "customerSatisfaction": "Customer Satisfaction",
+      "customerUrgency": "Customer Urgency",
+      "agentTone": "Agent Tone"
+    },
+    "purchasingPotential": {
+      "label": "Purchasing Potential",
+      "rating": "Rating",
+      "reason": "Reason"
+    },
+    "summary": "Summary"
+  },
+  "ticket_editor": {
+    "hello": "Hello from Ticket Editor",
+    "onboarding": {
+      "welcome": "Welcome to Jarvis Helpdesk",
+      "domain_required": "To start using Jarvis Helpdesk in Zendesk, please set up the integration with your Zendesk domain.",
+      "go_to_admin": "Go to Admin Workspace"
+    },
+    "response_toolbox": "Response Toolbox",
+    "formalization": "Formalization",
+    "on_working_msg": "This may take a few seconds.",
+    "cancel_action": "Cancel action",
+    "actions": {
+      "draft_response": {
+        "title": "Draft response",
+        "re_draft_title": "Re-draft response",
+        "on_working": "Drafting response...",
+        "on_success": "Response drafted successfully",
+        "on_failed": "Failed to draft response"
+      },
+      "correct_spelling": {
+        "title": "Correct spelling",
+        "on_working": "Correcting spelling...",
+        "on_success": "Spelling corrected successfully",
+        "on_failed": "Failed to correct spelling"
+      },
+      "simplify_words": {
+        "title": "Simplify words",
+        "on_working": "Simplifying words...",
+        "on_success": "Your response was simplified successfully",
+        "on_failed": "Failed to simplify words"
+      },
+      "shorten_response": {
+        "title": "Shorten response",
+        "on_working": "Shortening response...",
+        "on_success": "Your response was shortened successfully",
+        "on_failed": "Failed to shorten response"
+      },
+      "lengthen_response": {
+        "title": "Lengthen response",
+        "on_working": "Lengthening response...",
+        "on_success": "Your response was lengthened successfully",
+        "on_failed": "Failed to lengthen response"
+      }
+    }
+  },
+  "popup": {
+    "hello": "Hello from Popup"
+  },
+  "nav_bar": {
+    "hello": "Hello from Nav Bar"
+  }
+}

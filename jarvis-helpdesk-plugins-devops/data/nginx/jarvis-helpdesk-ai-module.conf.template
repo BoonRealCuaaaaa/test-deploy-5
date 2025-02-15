@@ -1,0 +1,22 @@
+upstream ${JARVIS_AI_UPSTREAM} {
+    server ${AI_MODULE}:${AI_MODULE_PORT};
+}
+
+server {
+    listen 80;
+
+    server_name ${AI_DOMAIN};
+
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    ssl_certificate     /etc/letsencrypt/live/${AI_DOMAIN}/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/${AI_DOMAIN}/privkey.pem;
+    server_name ${AI_DOMAIN};
+
+    location / {
+        proxy_pass http://${JARVIS_AI_UPSTREAM};
+    }
+}

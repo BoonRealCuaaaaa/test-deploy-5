@@ -1,0 +1,94 @@
+{
+  "app": {
+    "name": "Jarvis Helpdesk AI Copilot",
+    "short_description": "Jarvis est un copilot AI pour Zendesk Helpdesk",
+    "long_description": "Jarvis est un copilot AI pour Zendesk Helpdesk",
+    "installation_instructions": "Configurez les paramètres de l'application, puis cliquez sur Installer:...",
+    "title": "Jarvis Helpdesk AI Copilot"
+  },
+  "ticket_sidebar": {
+    "hello": "Bonjour du Ticket Sidebar",
+    "onboarding": {
+      "welcome": "Bienvenue sur Jarvis Helpdesk",
+      "introduction": "Jarvis Helpdesk améliore vos opérations de support avec des fonctionnalités basées sur l'IA :",
+      "login_required": "Jarvis Helpdesk est installé, mais une connexion à Admin Workspace est requise.",
+      "domain_required": "Pour commencer à utiliser Jarvis Helpdesk dans Zendesk, veuillez configurer l'intégration avec votre domaine Zendesk.",
+      "google_login_warning": "If you're still seeing this screen after login, please click \"Go to Admin Workspace\" again.",
+      "go_to_admin": "Accédez à l'espace d'administration"
+    },
+    "autoResponse": {
+      "label": "Réponse automatique",
+      "tooltip": "Rédigez automatiquement une réponse lorsque vous accédez à cette page ou recevez un nouveau message"
+    },
+    "overview": {
+      "label": "Aperçu",
+      "totalMessages": "Nombre total de messages",
+      "lastMessageByAgent": "Dernier message par l'agent",
+      "averageResponseTime": "Temps de réponse moyen"
+    },
+    "sentiments": {
+      "label": "Sentiments",
+      "customerTone": "Ton du client",
+      "customerSatisfaction": "Satisfaction du client",
+      "customerUrgency": "Urgence du client",
+      "agentTone": "Ton de l'agent"
+    },
+    "purchasingPotential": {
+      "label": "Potentiel d'achat",
+      "rating": "Évaluation",
+      "reason": "Raison"
+    },
+    "summary": "Résumé"
+  },
+  "ticket_editor": {
+    "hello": "Bonjour de l'éditeur de tickets",
+    "onboarding": {
+      "welcome": "Bienvenue sur Jarvis Helpdesk",
+      "domain_required": "Pour commencer à utiliser Jarvis Helpdesk dans Zendesk, veuillez configurer l'intégration avec votre domaine Zendesk.",
+      "go_to_admin": "Accédez à l'espace d'administration"
+    },
+    "response_toolbox": "Boîte à outils de réponse",
+    "formalization": "Formalisation",
+    "on_working_msg": "Cela peut prendre quelques secondes.",
+    "cancel_action": "Annuler l'action",
+    "actions": {
+      "draft_response": {
+        "title": "Rédiger une réponse",
+        "re_draft_title": "Refaire le titre",
+        "on_working": "Rédaction de la réponse",
+        "on_success": "Réponse rédigée avec succès",
+        "on_failed": "Échec de la rédaction de la réponse"
+      },
+      "correct_spelling": {
+        "title": "Corriger l'orthographe",
+        "on_working": "Correction de l'orthographe",
+        "on_success": "Orthographe corrigée avec succès",
+        "on_failed": "Échec de la correction de l'orthographe"
+      },
+      "simplify_words": {
+        "title": "Simplifier les mots",
+        "on_working": "Simplification des mots...",
+        "on_success": "Votre réponse a été simplifiée avec succès",
+        "on_failed": "Échec de la simplification de l'orthographe"
+      },
+      "shorten_response": {
+        "title": "Raccourcir la réponse",
+        "on_working": "Raccourcissement de la réponse",
+        "on_success": "Réponse raccourcie avec succès",
+        "on_failed": "Échec du raccourcissement de la réponse"
+      },
+      "lengthen_response": {
+        "title": "Allonger la réponse",
+        "on_working": "Allongement de la réponse",
+        "on_success": "Réponse allongée avec succès",
+        "on_failed": "Échec de l'allongement de la réponse"
+      }
+    }
+  },
+  "popup": {
+    "hello": "Bonjour de la fenêtre contextuelle"
+  },
+  "nav_bar": {
+    "hello": "Bonjour du Nav Bar"
+  }
+}

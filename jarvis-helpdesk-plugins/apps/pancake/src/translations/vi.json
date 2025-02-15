@@ -1,0 +1,94 @@
+{
+  "app": {
+    "name": "Jarvis Helpdesk AI Copilot",
+    "short_description": "Jarvis là một trợ lý AI cho Zendesk Helpdesk",
+    "long_description": "Jarvis là một trợ lý AI cho Zendesk Helpdesk",
+    "installation_instructions": "Cấu hình các cài đặt ứng dụng sau, sau đó nhấn Cài đặt:...",
+    "title": "Jarvis Helpdesk AI Copilot"
+  },
+  "ticket_sidebar": {
+    "hello": "Xin chào từ Ticket Sidebar",
+    "onboarding": {
+      "welcome": "Chào mừng đến với Jarvis Helpdesk từ",
+      "introduction": "Jarvis Helpdesk nâng cao hoạt động hỗ trợ của bạn với các tính năng AI:",
+      "login_required": "Cần đăng nhập vào Admin Workspace.",
+      "domain_required": "Thiết lập tích hợp với miền Zendesk của bạn.",
+      "google_login_warning": "If you're still seeing this screen after login, please click \"Go to Admin Workspace\" again.",
+      "go_to_admin": "Đi đến Admin Workspace"
+    },
+    "autoResponse": {
+      "label": "Tự động phản hồi",
+      "tooltip": "Tự động soạn thảo phản hồi khi vào trang này hoặc nhận tin nhắn mới"
+    },
+    "overview": {
+      "label": "Tổng quan",
+      "totalMessages": "Tổng số tin nhắn",
+      "lastMessageByAgent": "Tin nhắn cuối cùng bởi nhân viên",
+      "averageResponseTime": "Thời gian phản hồi trung bình"
+    },
+    "sentiments": {
+      "label": "Cảm xúc",
+      "customerTone": "Giọng điệu của khách hàng",
+      "customerSatisfaction": "Sự hài lòng của khách hàng",
+      "customerUrgency": "Mức độ khẩn cấp",
+      "agentTone": "Giọng điệu của nhân viên"
+    },
+    "purchasingPotential": {
+      "label": "Tiềm năng mua hàng",
+      "rating": "Đánh giá",
+      "reason": "Lý do"
+    },
+    "summary": "Tóm tắt"
+  },
+  "ticket_editor": {
+    "hello": "Xin chào từ Ticket Editor",
+    "onboarding": {
+      "welcome": "Chào mừng đến với Jarvis Helpdesk",
+      "domain_required": "Để bắt đầu sử dụng Jarvis Helpdesk trong Zendesk, vui lòng thiết lập tích hợp với miền Zendesk của bạn.",
+      "go_to_admin": "Đi đến Admin Workspace"
+    },
+    "response_toolbox": "Hộp công cụ phản hồi",
+    "formalization": "Trình bày trang trọng",
+    "on_working_msg": "Điều này có thể mất vài giây.",
+    "cancel_action": "Hủy bỏ hành động",
+    "actions": {
+      "draft_response": {
+        "title": "Soạn thảo phản hồi",
+        "re_draft_title": "Soạn lại phản hồi",
+        "on_working": "Đang soạn phản hồi...",
+        "on_success": "Đã soạn phản hồi thành công",
+        "on_failed": "Soạn phản hồi thất bại"
+      },
+      "correct_spelling": {
+        "title": "Sửa lỗi chính tả",
+        "on_working": "Đang sửa lỗi chính tả...",
+        "on_success": "Đã sửa lỗi chính tả thành công",
+        "on_failed": "Sửa lỗi chính tả thất bại"
+      },
+      "simplify_words": {
+        "title": "Đơn giản hóa từ ngữ",
+        "on_working": "Đang đơn giản hóa từ ngữ...",
+        "on_success": "Phản hồi của bạn đã được đơn giản hóa thành công",
+        "on_failed": "Đơn giản hóa từ ngữ thất bại"
+      },
+      "shorten_response": {
+        "title": "Rút gọn phản hồi",
+        "on_working": "Đang rút gọn phản hồi...",
+        "on_success": "Phản hồi của bạn đã được rút gọn thành công",
+        "on_failed": "Rút gọn phản hồi thất bại"
+      },
+      "lengthen_response": {
+        "title": "Mở rộng phản hồi",
+        "on_working": "Đang mở rộng phản hồi...",
+        "on_success": "Phản hồi của bạn đã được mở rộng thành công",
+        "on_failed": "Mở rộng phản hồi thất bại"
+      }
+    }
+  },
+  "popup": {
+    "hello": "Xin chào từ Popup"
+  },
+  "nav_bar": {
+    "hello": "Xin chào từ Nav Bar"
+  }
+}
